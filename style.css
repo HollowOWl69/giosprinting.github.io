@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.png);
+    background-position: center;                    
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 170px;
+    padding-top: 5%;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 40px;
+    margin-left: 30px;
+    padding-top: 2%;
+}
+nav{
+    flex: 1;
+    text-align: right;
+    padding-top: 2%;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15.5px;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis:  50%;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+p{
+    color: #fff;
+    font-size: 30px;
+    line-height: 55px;
+}
+
+button{
+    width: 200px;
+    color: #000;
+    font-size: 15px;
+    padding: 15px 10px;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+}
+.card{
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 25px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 45px 65px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(images/print.gif);
+}
+.card2{
+    background-image: url(images/photocopy.gif);
+}
+
+.card3{
+    background-image: url(images/xerox.gif);
+}
+.card4{
+    background-image: url(images/Documents.gif);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+h5{
+    color: #000000;
+    text-shadow: 0 0 5px #827d7d;
+}
+.card p{
+    text-shadow: 0 0 15px; 000;
+    font-size: 11px;
+}
+#mySidenav a {
+    position:fixed;
+    right: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration:dashed;
+    font-size: 20px;
+    color: white;
+    
+  }
+  
+  #mySidenav a:hover {
+    right: 0;
+
+  }
+  
+  #projects {
+    top: 140px;
+    background-color: #555;
+  }
+  
+  #contact {
+    top: 200px;
+    background-color: #555
+  }
+
+
