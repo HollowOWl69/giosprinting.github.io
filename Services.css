@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 100%;
+    height: 117vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/Backround.jpg);
+    background-position: center;                    
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+
+
+    nav{
+    flex: 1;
+    text-align: right;
+    padding-top: 2%;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15.5px;
+}
+.row{
+    display: flex;
+    height: 80%;
+    align-items: center;
+}
+.col{
+    flex-basis:  50%;
+}
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+p{
+    color: #f1f1f1;
+font-size: 29px;
+line-height: 55px;
+}
+.p1{
+color: #141414;
+font-size: 29px;
+line-height: 55px;
+}
+.p2{
+color: #0c0c0c;
+font-size: 29px;
+line-height: 55px;
+}
+.p3{
+color: #080808;
+font-size: 29px;
+line-height: 55px;
+}
+.p4{
+color: #0f0e0e;
+font-size: 20px;
+line-height: 55px
+}
+.p5{
+color: #000000;
+font-size: 29px;
+line-height: 55px;
+}
+.p6{
+    color: #000000;
+    font-size: 29px;
+    line-height: 55px;
+    }
+    
+button{
+    width: 150px;
+    color: #000;
+    font-size: 13px;
+    padding: 13px 0;
+    background: #99fcea;
+    border: 0;
+    border-radius: 10px;
+    outline:#827d7d ;
+    margin-top: 5px;
+}
+.card{
+    width: 200px;
+    height: 180px;
+    display: inline-block;
+    border-radius: 10px;
+    padding:   20px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 45px 65px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1{
+    background-image: url(images/print.gif);
+}
+.card2{
+    background-image: url(images/photocopy.gif);
+}
+
+.card3{
+    background-image: url(images/xerox.gif);
+}
+.card4{
+    background-image: url(images/Docu.gif);
+}
+.card5{
+    background-image: url(images/1x1.gif);
+}
+.card6{
+    background-image: url(images/jingle-keys.gif);
+}
+
+
+.card:hover{
+    transform: translateY(-15px);
+}
+h5{
+    color: #000000;
+    text-shadow: 0 0 5px #827d7d;
+}
+.card p{
+    text-shadow: 0 0 15px;
+    font-size: 11px;
+}
+.button2{
+    padding-right: 100%;
+    max-width: 400px;
+
+
+}
+
+
+.row .col button{
+margin-top: 3%; 
+}
