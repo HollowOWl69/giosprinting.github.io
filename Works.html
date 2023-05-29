@@ -7,26 +7,32 @@
         <link href="https://fonts.googleapis.com/css2?
         family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     </head>
-    <body>
+    <body>  
         <div class="container">
             <div class="navbar">
+                <img src="logo.png" class="logo">
                 <nav>
-                    <ul>
-                        <li><a href="https://hollowowl69.github.io/giosprinting.github.io/index.html">HOME</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/Location.html">LOCATION</a></li>     
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/about.html">ABOUT</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/Services.html">SERVICES</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/contact.html">CONTACTS</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/carrers.html">CAREERS</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/Learn%20More.html">FAQs</a></li>
-                    </ul>
+    
+                    <div class="topnav" id="myTopnav">
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/about.html" class="active">ABOUT</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/index.html">HOME</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/Location.html">LOCATION</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/Services.html">SERVICES</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/contact.html">CONTACTS</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/carrers.html">CAREERS</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/Learn%20More.html">FAQ's</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </div>
                 </nav>
             </div>
              <div class="row">
                 <div class="col">
                     <h1>Gio's Sample Works</h1>
-                    <p>here are some sample works of gio's services: </p>
-                    
+                    <p>Here are a few examples of the services provided by Gio:</p>
+                    <button type="button"><a href="file:///C:/Users/Russel/Downloads/Gio's/index.html">HOME </button></a>
+
                     
                  </div>
                 <div class="col">
@@ -55,11 +61,18 @@
             <h5></h5>
             
         </div>
-            
-  
-    
     </div>
     </div>
         </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+          </script>
     </body>
 </html>
