@@ -1,48 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>History</title>
-    <link rel="stylesheet" href="Contact.css">
-    <link href="https://fonts.googleapis.com/css2?
-        family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    </head>
-    <body>
-        <div class="circle"></div>
+    <title>Gio's Printing Service</title>
+    <link rel="stylesheet" href="Contact.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>  
     <div class="container">
         <div class="navbar">
             <img src="logo.png" class="logo">
-     
             <nav>
-                <ul>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/index.html">HOME</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/Location.html">LOCATION</a></li>     
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/about.html">ABOUT</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/Services.html">SERVICES</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/contact.html">CONTACTS</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/carrers.html">CAREERS</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/Learn%20More.html">FAQs</a></li>
-                </ul>
-                       
-                </ul>
+                <div class="topnav" id="myTopnav">
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/about.html" class="active">ABOUT</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/index.html">HOME</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/Location.html">LOCATION</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/Services.html">SERVICES</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/contact.html">CONTACTS</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/carrers.html">CAREERS</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/carrers.html">FAQ's</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
             </nav>
-
         </div>
-    
-        <div class="wrapper">
-            <div class="textbox">
-                <h2 class="Title">Contact Us</h2>
-                <p id="rcorners2"> mobile: 09305660523 </p>
-                <p id="rcorners3"> facebook: Gio's Printing Services </p>
-                <p id="rcorners4"> Shoppe: shopee.ph/gioprintingservices </p>
+        <div class="container2">
+            <div class="link-container">
+                <h1 class="title">Contacts</h1>
+                <a href="https://www.facebook.com/GioPhotoCopy">
+                    <img src="images/fblogo.webp" alt="Link Image 1" class="link-image">
+                    <span class="link-text">Gio's Printing Services</span>
+                </a>
+                <a href="https://shopee.ph/gioprintingservices">
+                    <img src="images/shop.png" alt="Link Image 2" class="link-image">
+                    <span class="link-text">GPS (Gio's Printing Services)</span>
+                </a>
+                <a href=" ">
+                    <img src="images/phone.png" alt="Link Image 3" class="link-image">
+                    <span class="link-text">0930-5660-523</span>
+                </a>
             </div>
-                <div class="imgbox">
-            <div class="textbox">
-                <img src="images/Contact-removebg-preview.png" class="content">
-
-            </div>
-<section>
-</div>
-
-    
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+</html>
