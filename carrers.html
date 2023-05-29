@@ -1,73 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Careers</title>
-    <link rel="stylesheet" href="carrers.css">
-    <link href="https://fonts.googleapis.com/css2?
-        family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    </head>
-    <body>
-        <div class="circle"></div>
+    <title>Gio's Printing Service</title>
+    <link rel="stylesheet" href="carrers.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>  
     <div class="container">
         <div class="navbar">
             <img src="logo.png" class="logo">
-     
             <nav>
-                <ul> 
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/index.html">HOME</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/Location.html">LOCATION</a></li>     
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/about.html">ABOUT</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/Services.html">SERVICES</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/contact.html">CONTACTS</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/carrers.html">CAREERS</a></li>
-                    <li><a href="https://hollowowl69.github.io/giosprinting.github.io/Learn%20More.html">FAQs</a></li>
-                </ul>
-            </nav>
-
-        </div>
-    
-        <div class="wrapper">
-            <div class="textbox">
-                <body>
-<br> <h1>Apply Now </h1>
-<br>
-                    <div class="form3">
-                        <form action="/action_page.php">
-                          <label for="fname">First Name</label>
-                          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                      <br>
-                          <label for="lname">Last Name</label>
-                          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                          <br>
-                          <label for="lname"> Middle Name </label>
-                          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                          <br>
-                          <label for="lname"> Address </label>
-                          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                          <br>
-                          <label for="country">Gender</label>
-                          <select id="country" name="country">
-                            <option value="australia"> Male </option>
-                            <option value="canada"> Female </option>
-                            <option value="usa"> Others </option>
-                          </select>
-                        
-                          <input type="submit" value="Submit">
-                        </form>
-                      </div>
-                      <br> <p id="rcorners3">MISSION 
-                        <br> to provide high-quality printing services to our customers with exceptional customer service. We aim to be a reliable and trustworthy partner for our customers in meeting their printing needs, whether it's for personal or business purposes. Our goal is to exceed our customers' expectations by delivering exceptional printing products and services that are affordable, timely, and environmentally friendly.</p>
-                        <br> <p id="rcorners4">VISION 
-                            <br> to become the go-to printing shop for anyone seeking top-quality printing services. We aim to be recognized for our reliability, affordability, and commitment to excellence. We aspire to continuously improve our products and services through innovative technologies and a passionate team of experts. Ultimately, we envision a world where printing is not just a service, but an experience that inspires creativity and brings ideas to life.</p> 
-                   
-                      
-                    
-                    
-                    </body>
-               
-
+                <div class="topnav" id="myTopnav">
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/about.html" class="active">ABOUT</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/index.html">HOME</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/Location.html">LOCATION</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/Services.html">SERVICES</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/contact.html">CONTACTS</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/carrers.html">CAREERS</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/Learn%20More.html">FAQ's</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </div>
+        <div class="row">
+            <div class="col">
+                <div class="mission-vision">
+                    <div class="mission">
+                        <h1>Mission</h1>
+                        <p>To provide high-quality printing services to our customers with exceptional customer service. We aim to be a reliable and trustworthy partner for our customers in meeting their printing needs, whether it's for personal or business purposes. Our goal is to exceed our customers' expectations by delivering exceptional printing products and services that are affordable, timely, and environmentally friendly.</p>
+                    </div>
+                    <div class="vision">
+                        <h1>Vision</h1>
+                        <p>To become the go-to printing shop for anyone seeking top-quality printing services. We aim to be recognized for our reliability, affordability, and commitment to excellence. We aspire to continuously improve our products and services through innovative technologies and a passionate team of experts. Ultimately, we envision a world where printing is not just a service, but an experience that inspires creativity and brings ideas to life.</p>
+                    </div>
+                </div>
             </div>
-<section>
-</div>
+        </div>
+        <div class="form-container">
+            <form>
+                <h2>Apply Now</h2> <br>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first-name">
+        
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last-name">
+        
+                <label for="middle-name">Middle Name</label>
+                <input type="text" id="middle-name" name="middle-name">
+        
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+        
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option> <!-- Added "Other" option -->
+                </select>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+      </script>
+</body>
+</html>
