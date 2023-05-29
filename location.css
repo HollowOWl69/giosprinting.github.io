@@ -1,100 +1,327 @@
-*{
+/* Mobile */
+
+* {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+  }
+  .container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  .navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align navbar to the right */
+    margin-top: 5%;
+  }
+  
+  nav {
+    flex: 1;
+    text-align: right;
+    padding-top: 2%;
+    position: relative;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute; 
+    top: 100%; 
+    right: 0; 
+    background-color: #333; 
+    display: none; 
+    z-index: 1; 
+  }
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 15.5px;
+    display: block;
+    padding: 14px 16px;
+    transition: background-color 0.3s ease; 
+  }
+  nav ul li a:hover {
+    background-color: #555; 
+  }
+  nav:hover ul {
+    display: block; 
+  }
+h1 {
+    color: white;
+    font-size: 40px;
+    margin: 40px 40px;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 5%;
+    background-color: white;
+    border-radius: 20px;
+}
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 20px;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+.map-container {
+    width: 100%;
+    height: 500px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+    /* Mobile Styles */
+@media screen and (max-width: 765px) {
+    .navbar {
+        margin-top: 10px;
+        justify-content: center;
+    }
+    
+    nav {
+        text-align: center;
+        padding-top: 0;
+    }
+
+    nav ul {
+        position: static;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+  
+    .topnav.responsive a {
+        display: block;
+        text-align: center;
+    }
+    /* Hide the logo */
+  .logo {
+    display: none;
+}
+
+    h1 {
+        font-size: 35px;
+        margin: 30px 30px;
+    }
+
+    .map-container {
+        height: 400px;
+    }
 }
 
 
-        .container{
-            width: 100%;
-            height: 100vh;
-            background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.png);
-            background-position: center;                    
-            background-size: cover;
-            padding-left: 5%;
-            padding-right: 5%;
-            box-sizing: border-box;
-     }
+
+
+
+
+
+    /* Styles for tablet devices */
+
+@media only screen and (min-width: 751px) and (max-width: 1023px) {
+
+    .logo {
+        width: 150px;
+    }
+
+    nav ul li {
+        margin-left: 50px;
+    }
+
+    h1 {
+        font-size: 42px;
+margin: 30px 30px;
+    }
+
+    .map-container {
+        height: 600px;
+    }
+}
+
+/* Styles for desktop devices (default styles) */
+/* Desktop Styles */
+@media screen and (min-width: 1024px) {
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+      .container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/background.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+      }
+      .navbar {
+        height: 12%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; /* Align navbar to the right */
+        margin-top: 5%;
+      }
+      
+      nav {
+        flex: 1;
+        text-align: right;
+        padding-top: 2%;
+        position: relative;
+      }
+      
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute; 
+        top: 100%; 
+        right: 0; 
+        background-color: #333; 
+        display: none; 
+        z-index: 1; 
+      }
+      nav ul li {
+        display: inline-block;
+        margin-left: 20px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 15.5px;
+        display: block;
+        padding: 14px 16px;
+        transition: background-color 0.3s ease; 
+      }
+      nav ul li a:hover {
+        background-color: #555; 
+      }
+      nav:hover ul {
+        display: block; 
+      }
+      h1 {
+        color: white;
+        font-size: 40px;
+      }
+      
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+        border-radius: 20px;
+      }
+      .topnav a {
+        float: left;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+      .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+      
+      .topnav a.active {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+      }
+      
+      .topnav .icon {
+        display: none;
+      }
+      .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      .map-container {
+        height: 450px;
+    }
     
-            .navbar{
-                height: 12%;
-                display: flex;
-                align-items: right;
-            }
-            .logo{
-                width: 180px;
-                height: 170px;
-                padding-right: 5%;
-                cursor: pointer;
-            }
-            .menu-icon{
-                width: 40px;
-                cursor: all-scroll;
-                margin-left: 30px;
-                padding-top: 2%;
-            }
-
-                nav{
-                    flex: 1;
-                    text-align: right;
-                    padding-top: 2%;
-                }
-                nav ul li{
-                    list-style: circle;
-                    display: inline-block;
-                    margin-left: 60px;
-                }
-                nav ul li a{
-                    text-decoration: none;
-                    color: #fff;
-                    font-size: 15.5px;
-                }
-                .row{
-                    display: flex;
-                    height: 70%;
-                    align-items: center;
-                }
-                .col{
-                    flex-basis:  30%;
-                }
-
-                
-                .container2{
-                        width: 101%;
-                        height: 83VH;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;  
-                        flex-direction: column;  
-                    }
-                    
-                    
-                        h1{
-                            color: #ffffff;
-                            margin-bottom: 40px;
-                            margin-top: 60px;
-                            
-
-                        }   
-
-                       
-                            iframe{
-                            width: 1370px;
-                                height: 500px;
-
-                            }
-                            
-
-                            
-           
+    .logo {
+        display: none;
+    }
+    }
     
-            
-
-    
-        
-           
-    
-            
-
-    
-        
