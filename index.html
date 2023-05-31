@@ -1,63 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gio's Printing Service</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>  
+<body class="">
+    
     <div class="container">
-        <div class="navbar">
-            <img src="logo.png" class="logo">
-            <nav>
+        <header>
+            <h1>Your Shopping Cart</h1>
+            <div class="shopping">
+                <img src="image/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+        </header>
 
-                <div class="topnav" id="myTopnav">
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/about.html" class="active">ABOUT</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/index.html">HOME</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/Location.html">LOCATION</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/Services.html">SERVICES</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/contact.html">CONTACTS</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/carrers.html">CAREERS</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/Learn%20More.html">FAQ's</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
-                </a>
-              </div>
-            </nav>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h1>Gio's Printing Service</h1>
-                <p>Bringing your vision to life, one print at a time.</p>
-               <button type="button"><a href="https://hollowowl69.github.io/giosprinting.github.io/Learn%20More.html">FAQs</a></button>
-            </div>
-            <div class="col">
-                    <div class="card card1" style="background-image: url(images/print.gif);">
-                        <h5>Printing</h5>
-                    </div>
-                    <div class="card card2" style="background-image: url(images/photocopy.gif);">
-                        <h5>Tarpaulin</h5>
-                    </div>
-                    <div class="card card3" style="background-image: url(images/xerox.gif);">
-                        <h5>Xerox</h5>
-                    </div>
-                    <div class="card card4" style="background-image: url(images/Documents.gif);">
-                        <h5>Documents</h5>
-                    </div>
-                    
-            </div>
+        <div class="list">
+          
         </div>
     </div>
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-      </script>
+    <div class="card">
+        <h1>Card</h1>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <div class="total">0</div>
+            <div class="closeShopping">Close</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
