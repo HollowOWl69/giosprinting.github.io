@@ -1,0 +1,710 @@
+    /* Mobile */
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    .container {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: #827d7d;
+    }
+    .container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #827d7d;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    .navbar {
+        height: 12%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; /* Align navbar to the right */
+        margin-top: 5%;
+    }
+    
+    nav {
+        flex: 1;
+        text-align: right;
+        padding-top: 2%;
+        position: relative;
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute; 
+        top: 100%; 
+        right: 0; 
+        background-color: #333; 
+        display: none; 
+        z-index: 1; 
+    }
+    nav ul li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 15.5px;
+        display: block;
+        padding: 14px 16px;
+        transition: background-color 0.3s ease; 
+    }
+    nav ul li a:hover {
+        background-color: #555; 
+    }
+    nav:hover ul {
+        display: block; 
+    }
+    h1 {
+        color: white;
+        font-size: 40px;
+        margin: 10px 10px;
+        text-align: center;
+    }
+
+    p {
+        color: black;
+        font-size: 18px;
+        line-height: 35px;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 10px;
+        background-color: white;
+        border-radius: 20px;
+        font-weight: bold;
+    }
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+        border-radius: 20px;
+    }
+    .topnav a {
+        float: left;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    
+    .topnav a.active {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+    }
+    
+    .topnav .icon {
+        display: none;
+    }
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .card{
+        width: 200px;
+        height: 230px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 25px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin: 45px 65px;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.5s;
+    }
+    .card1{
+        background-image: url(images/JNT.jpg);
+    }
+    .card2{
+        background-image: url(images/lalamove.png);
+    }
+
+    .card3{
+        background-image: url(images/LBC.png);
+    }
+
+    .card:hover{
+        transform: translateY(-10px);
+    }
+
+    h5 {
+        color: #000000;
+        text-shadow: 0 0 5px #827d7d;
+    }
+
+    
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
+  
+  .chat-container {
+    max-width: 400px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    outline: none;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    z-index: 9999; /* Add this line to ensure it appears above other elements */
+  }
+  
+  .chat-container.show {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  
+  
+  .chat-log {
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+  }
+  
+  .chat-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .chat-input input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .chat-input button {
+    margin-left: 10px;
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .open-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #FF4081;
+    color: #FFFFFF;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 9999;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .open-button:focus,
+  .open-button:hover {
+    opacity: 0.9;
+  }
+  
+  .chat-container.show + .open-button {
+    display: none;
+  }
+  .open-button {
+    transition: opacity 0.3s ease-in-out; /* Add transition property */
+  }
+  
+  .open-button.visible {
+    opacity: 2; /* Change opacity to 1 when the button is visible */
+  }
+  
+  .open-button.hidden {
+    opacity: 0; /* Change opacity to 0 when the button is hidden */
+    pointer-events: none; /* Disable pointer events when the button is hidden */
+  }
+  
+  .open-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 84px; /* Increase the width */
+    height: 80px; /* Increase the height */
+    border-radius: 300%;
+    background-color: rgb(31, 202, 88);
+    color: #FFFFFF;
+  }
+  .send-button:hover {
+    background-color: #656464; /* Replace with the desired color */
+    /* Add any other desired styles for the hover effect */
+  }
+
+
+        /* Mobile Styles */
+        @media screen and (max-width: 765px) {
+    
+        .navbar {
+            margin-top: 10px;
+            justify-content: center;
+        }
+        
+        nav {
+            text-align: center;
+            padding-top: 0;
+        }
+
+        nav ul {
+            position: static;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            display: block;
+            margin: 10px 0;
+        }
+        .topnav.responsive .icon {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    
+        .topnav.responsive a {
+            display: block;
+            text-align: center;
+        }
+        .row {
+            flex-direction: column;
+        }
+
+        .col {
+            flex-basis: 100%;
+        }
+
+        .card {
+            margin: 10px 0;
+        }
+        .logo {
+            display: none;
+          }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+        /* Styles for tablet devices */
+
+        @media only screen and (min-width: 751px) and (max-width: 1023px) {
+
+            .logo {
+                width: 150px;
+            }
+        * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        }
+        .container {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+        overflow: hidden;
+        background-color: #827d7d;
+        }
+        .container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #827d7d;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+        }
+        .navbar {
+        height: 12%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; /* Align navbar to the right */
+        margin-top: 5%;
+        }
+        
+        nav {
+        flex: 1;
+        text-align: right;
+        padding-top: 2%;
+        position: relative;
+        }
+        
+        nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        position: absolute; 
+        top: 100%; 
+        right: 0; 
+        background-color: #333; 
+        display: none; 
+        z-index: 1; 
+        }
+        nav ul li {
+        display: inline-block;
+        margin-left: 20px;
+        }
+        nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 15.5px;
+        display: block;
+        padding: 14px 16px;
+        transition: background-color 0.3s ease; 
+        }
+        nav ul li a:hover {
+        background-color: #555; 
+        }
+        nav:hover ul {
+        display: block; 
+        }
+        h1 {
+        color: white;
+        font-size: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        }
+        
+        p {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 35px;
+        text-align: center;
+        padding: 20px;
+        padding-top: 20px;
+        margin-bottom: 4%;
+        background-color: rgb(247, 247, 247);
+        border-radius: 20px;
+        font-weight: bold;
+        }
+        .topnav {
+        overflow: hidden;
+        background-color: #333;
+        border-radius: 20px;
+        }
+        .topnav a {
+        float: left;
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+        .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+        }
+        
+        .topnav a.active {
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        }
+        
+        .topnav .icon {
+        display: none;
+        }
+        .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        }
+        
+        .col {
+        flex-basis: 100%;
+        text-align: center;
+        }
+        
+        .card{
+            width: 200px;
+            height: 230px;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 25px 25px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin: 45px 65px;
+            background-position: center;
+            background-size: cover;
+            transition: transform 0.5s;
+        }
+        .card1{
+            background-image: url(images/JNT.jpg);
+        }
+        .card2{
+            background-image: url(images/lalamove.png);
+        }
+        
+        .card3{
+            background-image: url(images/LBC.png);
+        }
+        
+        .card:hover{
+            transform: translateY(-10px);
+        }
+        
+        h5 {
+        color: #000000;
+        text-shadow: 0 0 5px #827d7d;
+        }
+        
+        button[type="button"] {
+        font-size: 16.5px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        }
+    }
+    
+
+
+
+
+
+
+
+
+
+    /* Desktop Styles */
+    @media screen and (min-width: 1024px) {
+        .logo {
+            width: 135px;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            padding-left: 5%;
+            padding-right: 5%;
+            box-sizing: border-box;
+            overflow: hidden;
+            background-color: #827d7d;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #827d7d;
+            background-position: center;
+            background-size: cover;
+            z-index: -1;
+        }
+        .navbar {
+            height: 20%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end; /* Align navbar to the right */
+            margin-top: 2%;
+        }
+        
+        nav {
+            flex: 1;
+            text-align: right;
+            padding-top: 2%;
+            position: relative;
+        }
+        
+        nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute; 
+            top: 100%; 
+            right: 0; 
+            background-color: #333; 
+            display: none; 
+            z-index: 1; 
+        }
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 15.5px;
+            display: block;
+            padding: 14px 16px;
+            transition: background-color 0.3s ease; 
+        }
+        nav ul li a:hover {
+            background-color: #555; 
+        }
+        nav:hover ul {
+            display: block; 
+        }
+        h1 {
+            color: white;
+            font-size: 40px;
+            text-align: center;
+            padding-top: 50px;
+            padding : 5px;
+        }
+        
+        p {
+            color: black;
+            font-size: 16px;
+            text-align: center;
+            background-color: white;
+            border-radius: 30px;
+            font-weight: bold;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            border-radius: 20px;
+        }
+        .topnav a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .topnav a.active {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+        }
+        
+        .topnav .icon {
+            display: none;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .col {
+            flex-basis: 100%;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        
+        .card{
+            width: 200px;
+            height: 230px;
+            display: inline-block;
+            border-radius: 10px;
+            padding: 25px 25px;
+            box-sizing: border-box;
+            cursor: pointer;
+            margin: 45px 40px;
+            margin-top: 50px 30px;
+            background-position: center;
+            background-size: cover;
+            transition: transform 0.5s;
+        
+        }
+        .card1{
+            background-image: url(images/JNT.jpg);
+        }
+        .card2{
+            background-image: url(images/lalamove.png);
+        }
+        
+        .card3{
+            background-image: url(images/LBC.png);
+        }
+        
+        .card:hover{
+            transform: translateY(-10px);
+        }
+        
+        h5 {
+            color: #000000;
+            text-shadow: 0 0 5px #827d7d;
+        }
+        
+        button[type="button"] {
+            color: black;
+            font-size: 16px;
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 20px;
+
+        }
+        
+        }
