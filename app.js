@@ -17,37 +17,37 @@ let products = [
   {
     id: 1,
     name: 'PRINTING',
-    image: 'image/STICKER.JPG',
+    image: 'STICKER.jpg',
     price: 3.00,
   },
   {
     id: 2,
     name: 'PHOTOCOPY',
-    image: 'image/sample10.JPG',
+    image: 'sample10.jpg',
     price: 2.00 ,
   },
   {
     id: 3,
     name: 'TARPAULIN',
-    image: 'image/sample16.JPG',
+    image: 'sample16.jpg',
     price: 15.00,
   },
   {
     id: 4,
     name: 'ID PICTURE 6pcs',
-    image: 'image/sample3.JPG',
+    image: 'sample3.jpg',
     price: 40.00, 
   },
   {
     id: 5,
     name: 'STICKER',
-    image: 'image/sample17.JPG',
+    image: 'sample17.jpg',
     price:  40.00, 
   },
   {
     id: 6,
     name: 'LAMINATION',
-    image: 'image/LAMINATE.JPG',
+    image: 'LAMINATE.jpg',
     price: 40.00,
   },
 ];
