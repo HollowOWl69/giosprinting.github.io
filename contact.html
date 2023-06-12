@@ -4,55 +4,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gio's Printing Service</title>
     <link rel="stylesheet" href="Contact.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>  
     <div class="container">
         <div class="navbar">
             <img src="logo.png" class="logo">
             <nav>
-               
                 <div class="topnav" id="myTopnav">
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/about.html" class="active">ABOUT</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/index.html">HOME</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/Location.html">LOCATION</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/Services.html">SERVICES</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/contact.html">CONTACTS</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/carrers.html">CAREERS</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/Learn%20More.html">FAQ's</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                  <i class="fa fa-bars"></i>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/about.html" >ABOUT</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/index.html">HOME</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/Location.html">LOCATION</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/services2.0.html">SERVICES</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/contact.html"class="active">CONTACTS</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/carrers.html">CAREERS</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/Learn%20More.html">FAQ's</a>
+                    <a href="file:///C:/Users/Russel/Downloads/Gio's/delivery.html">DELIVERIES</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
                     </a>
                 </div>
             </nav>
         </div>
         <div class="container2">
-            <div class="link-container">
-                <h1 class="title">Contacts</h1>
-                <a href="https://www.facebook.com/GioPhotoCopy">
-                    <img src="images/fblogo.webp" alt="Link Image 1" class="link-image">
-                    <span class="link-text">Gio's Printing Services</span>
-                </a>
-                <a href="https://shopee.ph/gioprintingservices">
-                    <img src="images/shop.png" alt="Link Image 2" class="link-image">
-                    <span class="link-text">GPS (Gio's Printing Services)</span>
-                </a>
-                <a href=" ">
-                    <img src="images/phone.png" alt="Link Image 3" class="link-image">
-                    <span class="link-text">0930-5660-523</span>
-                </a>
+            <h1 class="title">Contact Us</h1><div class="link-container">
+                <div class="contact-box">
+                    <a href="https://www.facebook.com/GioPhotoCopy" class="contact-link">
+                        <img src="images/fblogo.webp" alt="Link Image 1" class="link-image">
+                        <span class="link-text">Gio's Printing Services</span>
+                    </a>
+                </div>
+                <div class="contact-box">
+                    <a href="https://shopee.ph/gioprintingservices" class="contact-link">
+                        <img src="images/shop.png" alt="Link Image 2" class="link-image">
+                        <span class="link-text">GPS (Gio's Printing Services)</span>
+                    </a>
+                </div>
+                <div class="contact-box">
+                    <a href="#" class="contact-link">
+                        <img src="images/phone.png" alt="Link Image 3" class="link-image">
+                        <span class="link-text">0930-5660-523</span>
+                    </a>
+                </div>
             </div>
         </div>
+        <div class="feedback-box">
+            <h2 class="feedback-title">Let us know what you think!</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
     </div>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-    </script>
+    <script src="cht.js"></script> 
 </body>
+      
+<div class="chat-container">
+    <div class="close-button">X</div>
+    <div class="chat-log" id="chat-log"></div>
+    <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Got any questions...">
+      <button id="send-btn">Send</button>
+    </div>
 </html>
