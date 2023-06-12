@@ -85,7 +85,7 @@ function initApp() {
     }
 
     newDiv.innerHTML = `
-          <img src="image/${value.image}" style="${imageSize}">
+          <img src="images/${value.image}" style="${imageSize}">
           <div class="title">${value.name}</div>
           <div class="price">${value.price.toLocaleString()}</div>
           <div>
