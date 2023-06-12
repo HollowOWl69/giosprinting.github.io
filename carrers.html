@@ -11,15 +11,15 @@
         <div class="navbar">
             <img src="logo.png" class="logo">
             <nav>
-                
-                <div class="topnav" id="myTopnav">
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/about.html" class="active">ABOUT</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/index.html">HOME</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/Location.html">LOCATION</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/Services.html">SERVICES</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/contact.html">CONTACTS</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/carrers.html">CAREERS</a>
-                <a href="https://hollowowl69.github.io/giosprinting.github.io/Learn%20More.html">FAQ's</a>
+              <div class="topnav" id="myTopnav">
+                <a href="file:///C:/Users/Russel/Downloads/Gio's/about.html" >ABOUT</a>
+                <a href="file:///C:/Users/Russel/Downloads/Gio's/index.html">HOME</a>
+                <a href="file:///C:/Users/Russel/Downloads/Gio's/Location.html">LOCATION</a>
+                <a href="file:///C:/Users/Russel/Downloads/Gio's/services2.0.html">SERVICES</a>
+                <a href="file:///C:/Users/Russel/Downloads/Gio's/contact.html">CONTACTS</a>
+                <a href="file:///C:/Users/Russel/Downloads/Gio's/carrers.html"class="active">CAREERS</a>
+                <a href="file:///C:/Users/Russel/Downloads/Gio's/Learn%20More.html">FAQ's</a>
+                <a href="file:///C:/Users/Russel/Downloads/Gio's/delivery.html">DELIVERIES</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                   <i class="fa fa-bars"></i>
                     </a>
@@ -29,51 +29,61 @@
                 <div class="mission-vision">
                     <div class="mission">
                         <h1>Mission</h1>
-                        <p>To provide high-quality printing services to our customers with exceptional customer service. We aim to be a reliable and trustworthy partner for our customers in meeting their printing needs, whether it's for personal or business purposes. Our goal is to exceed our customers' expectations by delivering exceptional printing products and services that are affordable, timely, and environmentally friendly.</p>
+                        <p>To offer our clients great printing services and outstanding customer support. Whether it's for personal or professional use, we want to be our clients' go-to partner for all things printing. By providing superior printing goods and services that are reasonably priced, timely, and environmentally friendly, we hope to go above and beyond the expectations of our clients.</p>
                     </div>
                     <div class="vision">
                         <h1>Vision</h1>
-                        <p>To become the go-to printing shop for anyone seeking top-quality printing services. We aim to be recognized for our reliability, affordability, and commitment to excellence. We aspire to continuously improve our products and services through innovative technologies and a passionate team of experts. Ultimately, we envision a world where printing is not just a service, but an experience that inspires creativity and brings ideas to life.</p>
+                        <p>To become the go-to printing business for everyone in need of high-caliber printing services. For our dependability, affordability, and dedication to excellence, we hope to be known. Through cutting-edge technology and a dedicated team of professionals, we aim to continuously improve our goods and services. In the end, we picture a world where printing is more than simply a convenience; it's a creative experience that gives life to concepts.</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="form-container">
             <form>
-                <h2>Apply Now</h2> <br>
-                <label for="first-name">First Name</label>
-                <input type="text" id="first-name" name="first-name">
-        
-                <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name">
-        
-                <label for="middle-name">Middle Name</label>
-                <input type="text" id="middle-name" name="middle-name">
-        
-                <label for="address">Address</label>
-                <input type="text" id="address" name="address">
-        
-                <label for="gender">Gender</label>
-                <select id="gender" name="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option> <!-- Added "Other" option -->
-                </select>
-        
-                <input type="submit" value="Submit">
+              <h2>Be part of us! We're currently looking for Part timer / Full timer.</h2>
+              <h2>Kindly fill out the following:</h2> <br>
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name">
+          
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name">
+          
+              <label for="middle-name">Middle Name</label>
+              <input type="text" id="middle-name" name="middle-name">
+          
+              <label for="address">Address</label>
+              <input type="text" id="address" name="address">
+          
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+          
+              <label for="role">Position</label>
+              <select id="role" name="role">
+                <option value="graphic-designer">Graphic Designer</option>
+                <option value="helper">Helper</option>
+              </select>
+          
+              <label for="resume">Resume</label>
+              <input type="file" id="resume" name="resume">
+          
+              <input type="submit" value="Submit">
             </form>
-        </div>
+          </div>
+          
+
         
     </div>
-    <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "topnav") {
-            x.className += " responsive";
-          } else {
-            x.className = "topnav";
-          }
-        }
-      </script>
+    <script src="cht.js"></script> 
 </body>
+      
+<div class="chat-container">
+  <div class="close-button">X</div>
+  <div class="chat-log" id="chat-log"></div>
+  <div class="chat-input">
+    <input type="text" id="user-input" placeholder="Got any questions...">
+    <button id="send-btn">Send</button>
+  </div>
 </html>
